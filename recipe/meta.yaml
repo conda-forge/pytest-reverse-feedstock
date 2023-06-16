@@ -1,13 +1,13 @@
 {% set name = "pytest-reverse" %}
-{% set version = "1.4.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1695b7c9e51b28db5af13d579b33b54a80958d86b886dfabd2a246bcad3e082e
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: b052f258958978fc327d5bcf3b1d3dc5f4ba80f0e7305e809664c7bb124eaf3e
 
 build:
   noarch: python
